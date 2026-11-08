@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B0F14"/>
+      <stop offset="0.55" stop-color="#0E141B"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="420" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 60) rotate(45) scale(220)">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowViolet" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1050 280) rotate(-45) scale(260)">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#1E293B" stroke-opacity="0.55" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <rect width="1200" height="320" fill="url(#glowCyan)"/>
+  <rect width="1200" height="320" fill="url(#glowViolet)"/>
+
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <text x="64" y="126" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="86" font-weight="700" fill="#F8FAFC">wh3baby</text>
+  <text x="66" y="172" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" font-weight="500" fill="url(#accent)">c++ / c / javascript / assembly / reverse engineering</text>
+
+  <g font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15">
+    <rect x="64" y="206" width="520" height="34" rx="8" fill="#0F172A" fill-opacity="0.85" stroke="#1E293B"/>
+    <circle cx="86" cy="223" r="5" fill="#22D3EE"/>
+    <text x="102" y="229" fill="#94A3B8">$ nm -C libwh3baby.so --defined-only</text>
+    <text x="82" y="268" fill="#E2E8F0">wh3baby::cpp::engine</text>
+    <text x="330" y="268" fill="#E2E8F0">wh3baby::js::browser</text>
+    <text x="82" y="294" fill="#E2E8F0">wh3baby::asm::hooks</text>
+    <text x="330" y="294" fill="#E2E8F0">wh3baby::re::ida</text>
+  </g>
+
+  <g transform="translate(700 78)">
+    <rect width="436" height="182" rx="14" fill="#0F172A" fill-opacity="0.92" stroke="#1E293B"/>
+    <rect x="0" y="0" width="436" height="30" rx="14" fill="#111C27"/>
+    <rect x="0" y="22" width="436" height="8" fill="#111C27"/>
+    <circle cx="20" cy="15" r="5" fill="#F472B6"/>
+    <circle cx="38" cy="15" r="5" fill="#F59E0B"/>
+    <circle cx="56" cy="15" r="5" fill="#22D3EE"/>
+    <text x="80" y="20" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="12" fill="#64748B">mta-mobile — private/android-port</text>
+
+    <g font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="13">
+      <text x="22" y="58" fill="#22D3EE">$ git log --oneline -3</text>
+      <text x="22" y="82" fill="#94A3B8">dfcf970 README: profile + telegram</text>
+      <text x="22" y="104" fill="#94A3B8">c8cde98 client logic shim: audio stubs</text>
+      <text x="22" y="126" fill="#94A3B8">0f98485 CServerInfo in libMTA (device)</text>
+      <text x="22" y="154" fill="#F59E0B"># GTA:SA 2.11.311 · arm64-v8a · NDK r29</text>
+    </g>
+  </g>
+
+  <rect x="64" y="316" width="1072" height="2" fill="url(#amber)" opacity="0.7"/>
+</svg>
